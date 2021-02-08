@@ -1,12 +1,12 @@
 <?php
 
-namespace Compasso\TaxvatValidator\Test\Unit\Plugin\Customer\Model;
+namespace PeterTecnology\TaxvatValidator\Test\Unit\Plugin\Customer\Model;
 
 use Magento\Customer\Model\Customer;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\MockObject\MockObject;
 use Magento\Customer\Model\AccountManagement;
-use Compasso\TaxvatValidator\Plugin\Customer\Model\AccountManagementPlugin;
+use PeterTecnology\TaxvatValidator\Plugin\Customer\Model\AccountManagementPlugin;
 use Magento\Customer\Model\ResourceModel\Customer\CollectionFactory;
 
 class AccountManagementPluginTest extends TestCase
