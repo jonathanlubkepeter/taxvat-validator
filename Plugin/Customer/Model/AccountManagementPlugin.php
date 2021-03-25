@@ -63,14 +63,16 @@ class AccountManagementPlugin
 
     protected function taxvatExist(String $taxvat)
     {
-        $customers = $this->collectionFactory->create();
+        $customers = $this->customerFactory->create()
+            ->getCollection()
+            ->addAttributeToSelect('taxvat')
+            ->addAttributeToFilter('taxvat', array('eq' => $taxvat))
+            ->load();
 
-        foreach ($customers as $key => $cust) {
-            if ($cust->getTaxvat() === $taxvat) {
-                throw new InputException(
-                    __('Um cliente já foi associado à esse CPF.')
-                );
-            }
+        if (count($customers) != 0) {
+            throw new InputException(
+                __('Um cliente já foi associado à esse CPF.')
+            );
         }
         return false;
     }
