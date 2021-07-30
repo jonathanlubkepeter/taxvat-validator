@@ -2,4 +2,4 @@
 
 use Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::MODULE, 'PeterTecnology_TaxvatValidator', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::MODULE, 'PeterTechnology_TaxvatValidator', __DIR__);
