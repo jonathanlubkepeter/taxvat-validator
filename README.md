@@ -7,4 +7,7 @@ Leave taxvat configured as required in client settings
 Admin -> Stores -> Configuration -> Customers -> Customer Configuration -> Name And Address Options -> Show Tax/Vat Number -> Required
 
 # Vendor name
-PeterTecnology
+PeterTechnology
+
+# Module Name
+TaxvatValidator
