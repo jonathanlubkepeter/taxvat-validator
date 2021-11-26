@@ -1,0 +1,23 @@
+{
+    "name": "petertechnology/taxvatvalidator",
+    "description": "Adapt user registration for the Brazilian market.",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Peter Technology",
+            "email": "",
+            "homepage": ""
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "PeterTechnology\\TaxvatValidator\\": ""
+        }
+    }
+}
